@@ -15,4 +15,4 @@ async function routes (fastify, options) {
 
 }
   
-export default rou
+export default routes
