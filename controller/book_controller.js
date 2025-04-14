@@ -1,10 +1,9 @@
-﻿
-
+﻿import client  from "../config/db.js";
 class book_controller{
 
     all = async function (req, res, next) {
-        //const result = await client.query('SELECT * from  public."EMUSER"'); 
-        res.send("your success");    
+        const result = await client.query('SELECT * from  public."book_detail"'); 
+        res.send(result);    
     }
 }
 
