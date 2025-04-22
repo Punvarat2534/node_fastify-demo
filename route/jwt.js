@@ -12,8 +12,12 @@ async function routes (fastify, options) {
             time: Date(),
             userId: 12,
             }
-        const token = jwt.sign(data, jwtSecretKey,{ expiresIn: "3m", algorithm: "HS256" });
-            res.send(token);
+       const token = jwt.sign(data, jwtSecretKey,{ expiresIn: "3m", algorithm: "HS256" });
+
+          var d = {
+                "token":token
+            }
+            res.send(d);
         }else{
             res.send("forbidden");
         }
