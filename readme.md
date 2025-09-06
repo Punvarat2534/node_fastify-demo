@@ -3,7 +3,7 @@
 ## npm i fastify
 ## npm i esm
 ## npm install jsonwebtoken
-## npm install nodemon
+## npm install -g nodemon
 ## npm install cors
 ## npm install pg
 ## npm install fastify-file-upload
